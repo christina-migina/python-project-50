@@ -1,2 +1,37 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/christina-migina/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/christina-migina/python-project-50/actions)
+# Gendiff
+
+Difference Evaluator is a program that determines the differences between two data structures. This is a popular problem with many online services available for its solution, such as http://www.jsondiff.com/. A similar mechanism is used when displaying test results or automatically tracking changes in configuration files.
+
+## Dependencies
+
+* Windows 10 / macOS / Linux
+* Python 3.10+
+* uv package manager
+
+## Installation
+
+### 1. Clone the repository
+```bash
+git clone git@github.com:christina-migina/python-project-50.git
+cd python-project-50
+```
+[![asciicast](https://asciinema.org/a/0g8VyUo55aENklOA.svg)](https://asciinema.org/a/0g8VyUo55aENklOA)
+
+### 2. Install dependencies
+```bash
+make install
+```
+
+### 3. Build and install the package globally
+```bash
+make build
+make package-install
+```
+
+## Usage
+
+### 4. Run Gendiff via CLI
+```bash
+uv run gendiff path/to/file1.json path/to/file2.json
+```
+[![asciicast](https://asciinema.org/a/r74IpMBhcGzybJgf.svg)](https://asciinema.org/a/r74IpMBhcGzybJgf)
