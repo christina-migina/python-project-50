@@ -10,3 +10,6 @@ check:
 
 test-coverage:
 	uv run pytest --cov=gendiff --cov-report=xml
+
+format:
+	uv run ruff format .
