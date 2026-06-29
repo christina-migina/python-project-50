@@ -32,8 +32,14 @@ make package-install
 
 ## Usage
 
-### 4. Run Gendiff via CLI
+### 4. Run Gendiff with JSON files
 ```bash
 uv run gendiff path/to/file1.json path/to/file2.json
 ```
 [![asciicast](https://asciinema.org/a/r74IpMBhcGzybJgf.svg)](https://asciinema.org/a/r74IpMBhcGzybJgf)
+
+### 5. Run Gendiff with YAML files
+```bash
+uv run gendiff path/to/file1.yaml path/to/file2.yaml
+```
+[![asciicast](https://asciinema.org/a/4JO64S8jpG3YgF4W.svg)](https://asciinema.org/a/4JO64S8jpG3YgF4W)

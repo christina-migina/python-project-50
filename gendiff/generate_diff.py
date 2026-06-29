@@ -1,4 +1,4 @@
-import json
+from gendiff.parser import parse
 
 
 def format_value(value):
@@ -8,10 +8,8 @@ def format_value(value):
 
 
 def generate_diff(file_path1, file_path2):
-    with open(file_path1) as f:
-        data1 = json.load(f)
-    with open(file_path2) as f:
-        data2 = json.load(f)
+    data1 = parse(file_path1)
+    data2 = parse(file_path2)
 
     keys1 = data1.keys()
     keys2 = data2.keys()
