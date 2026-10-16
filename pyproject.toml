@@ -24,3 +24,6 @@ dev = [
 
 [project.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
+
+[tool.coverage.report]
+fail_under = 70
