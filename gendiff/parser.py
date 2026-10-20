@@ -3,14 +3,15 @@ from pathlib import Path
 
 import yaml
 
+PARSERS = {
+    '.json': json.load,
+    '.yaml': yaml.safe_load,
+    '.yml': yaml.safe_load,
+}
 
 def parse(file_path):
-    suffix = Path(file_path).suffix
-    if suffix in (".yaml", ".yml"):
-        with open(file_path) as f:
-            data = yaml.safe_load(f)
-        return data
-    elif suffix == ".json":
-        with open(file_path) as f:
-            data = json.load(f)
-        return data
+    path = Path(file_path)
+    extension = path.suffix.lower()
+
+    with open(file_path) as f:
+        return PARSERS[extension](f)

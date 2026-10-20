@@ -18,7 +18,6 @@ Difference Evaluator is a program that determines the differences between two da
 git clone git@github.com:christina-migina/python-project-50.git
 cd python-project-50
 ```
-[![asciicast](https://asciinema.org/a/0g8VyUo55aENklOA.svg)](https://asciinema.org/a/0g8VyUo55aENklOA)
 
 ### 2. Install dependencies
 ```bash
@@ -33,14 +32,16 @@ make package-install
 
 ## Usage
 
-### 4. Run Gendiff with JSON files
+### 4. Comparison of plain files
+1. **Stylish Formatter (Default)**
 ```bash
 uv run gendiff path/to/file1.json path/to/file2.json
-```
-[![asciicast](https://asciinema.org/a/r74IpMBhcGzybJgf.svg)](https://asciinema.org/a/r74IpMBhcGzybJgf)
-
-### 5. Run Gendiff with YAML files
-```bash
 uv run gendiff path/to/file1.yaml path/to/file2.yaml
 ```
-[![asciicast](https://asciinema.org/a/4JO64S8jpG3YgF4W.svg)](https://asciinema.org/a/4JO64S8jpG3YgF4W)
+
+### 5. Comparison of nested files
+1. **Stylish Formatter (Default)**
+```bash
+uv run gendiff path/to/file1_tree.json path/to/file2_tree.json
+uv run gendiff path/to/file1_tree.yaml path/to/file2_tree.yaml
+```
