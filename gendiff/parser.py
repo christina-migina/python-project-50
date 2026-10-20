@@ -11,8 +11,12 @@ PARSERS = {
 
 
 def parse(file_path):
-    path = Path(file_path)
+    path = Path(file_path).resolve()
+
+    if not path.is_file():
+        raise FileNotFoundError(f"File not found: {file_path}")
+
     extension = path.suffix.lower()
 
-    with open(file_path) as f:
+    with open(file_path, encoding="utf-8") as f:
         return PARSERS[extension](f)
