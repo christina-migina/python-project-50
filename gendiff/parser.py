@@ -4,10 +4,11 @@ from pathlib import Path
 import yaml
 
 PARSERS = {
-    '.json': json.load,
-    '.yaml': yaml.safe_load,
-    '.yml': yaml.safe_load,
+    ".json": json.load,
+    ".yaml": yaml.safe_load,
+    ".yml": yaml.safe_load,
 }
+
 
 def parse(file_path):
     path = Path(file_path)

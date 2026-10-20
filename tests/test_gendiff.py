@@ -1,22 +1,26 @@
-import pytest
 from pathlib import Path
+
+import pytest
 
 from gendiff.generate_diff import generate_diff
 
 TEST_DATA_DIR = Path(__file__).parent / "test_data"
 
-TEST_PARAMS = [('file1.json', 'file2.json', 'stylish', 'stylish_plain.txt'),
-             ('file1.yaml', 'file2.yaml', 'stylish', 'stylish_plain.txt'),
-             ('file1_tree.json', 'file2_tree.json', 'stylish', 'stylish_tree.txt'),
-             ('file1_tree.yaml', 'file2_tree.yaml', 'stylish', 'stylish_tree.txt'),
-             ]
+TEST_PARAMS = [
+    ("file1.json", "file2.json", "stylish", "stylish_plain.txt"),
+    ("file1.yaml", "file2.yaml", "stylish", "stylish_plain.txt"),
+    ("file1_tree.json", "file2_tree.json", "stylish", "stylish_tree.txt"),
+    ("file1_tree.yaml", "file2_tree.yaml", "stylish", "stylish_tree.txt"),
+]
+
 
 def get_test_data_path(filename):
     return str(TEST_DATA_DIR / filename)
 
+
 def read_file(filename):
     path = get_test_data_path(filename)
-    with open(path, 'r') as f:
+    with open(path, "r") as f:
         return f.read()
 
 
