@@ -18,5 +18,5 @@ def parse(file_path):
 
     extension = path.suffix.lower()
 
-    with open(file_path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return PARSERS[extension](f)

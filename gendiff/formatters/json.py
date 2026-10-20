@@ -1,2 +1,2 @@
 def format_json(diff):
-    pass
+    pass  # code will be added later

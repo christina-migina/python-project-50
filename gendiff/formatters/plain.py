@@ -1,2 +1,2 @@
 def format_plain(diff):
-    pass
+    pass  # code will be added later
