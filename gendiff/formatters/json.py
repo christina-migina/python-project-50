@@ -1,2 +1,5 @@
+import json
+
+
 def format_json(diff):
-    pass  # code will be added later
+    return json.dumps(diff, indent=2)

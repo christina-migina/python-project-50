@@ -13,6 +13,8 @@ TEST_PARAMS = [
     ("file1_tree.yaml", "file2_tree.yaml", "stylish", "stylish_tree.txt"),
     ("file1_tree.json", "file2_tree.json", "plain", "plain_tree.txt"),
     ("file1_tree.yaml", "file2_tree.yaml", "plain", "plain_tree.txt"),
+    ("file1_tree.json", "file2_tree.json", "json", "json_tree.txt"),
+    ("file1_tree.yaml", "file2_tree.yaml", "json", "json_tree.txt"),
 ]
 
 
