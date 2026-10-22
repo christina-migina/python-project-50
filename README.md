@@ -35,33 +35,39 @@ make package-install
 ### 4. Comparison of plain files
 1. **Stylish Formatter (Default)**
 ```bash
-uv run gendiff path/to/file1.json path/to/file2.json
-uv run gendiff path/to/file1.yaml path/to/file2.yaml
+uv run gendiff file1.json file2.json
+uv run gendiff file1.yaml file2.yaml
 ```
+[![asciicast](https://asciinema.org/a/1269465.svg)](https://asciinema.org/a/1269465)[![asciicast](https://asciinema.org/a/1269467.svg)](https://asciinema.org/a/1269467)
 2. **Plain Formatter**
 ```bash
-uv run gendiff --format plain path/to/file1.json path/to/file2.json
-uv run gendiff --format plain path/to/file1.yaml path/to/file2.yaml
+uv run gendiff --format plain file1.json file2.json
+uv run gendiff --format plain file1.yaml file2.yaml
 ```
+[![asciicast](https://asciinema.org/a/1269468.svg)](https://asciinema.org/a/1269468)
 3. **JSON Formatter**
 ```bash
-uv run gendiff --format json path/to/file1.json path/to/file2.json
-uv run gendiff --format json path/to/file1.yaml path/to/file2.yaml
+uv run gendiff --format json file1.json file2.json
+uv run gendiff --format json file1.yaml file2.yaml
 ```
+[![asciicast](https://asciinema.org/a/1269469.svg)](https://asciinema.org/a/1269469)[![asciicast](https://asciinema.org/a/1269470.svg)](https://asciinema.org/a/1269470)
 
 ### 5. Comparison of nested files
 1. **Stylish Formatter (Default)**
 ```bash
-uv run gendiff path/to/file1_tree.json path/to/file2_tree.json
-uv run gendiff path/to/file1_tree.yaml path/to/file2_tree.yaml
+uv run gendiff file1_tree.json file2_tree.json
+uv run gendiff file1_tree.yaml file2_tree.yaml
 ```
+[![asciicast](https://asciinema.org/a/1269471.svg)](https://asciinema.org/a/1269471)[![asciicast](https://asciinema.org/a/1269472.svg)](https://asciinema.org/a/1269472)
 2. **Plain Formatter**
 ```bash
-uv run gendiff --format plain path/to/file1_tree.json path/to/file2_tree.json
-uv run gendiff --format plain path/to/file1_tree.yaml path/to/file2_tree.yaml
+uv run gendiff --format plain file1_tree.json file2_tree.json
+uv run gendiff --format plain file1_tree.yaml file2_tree.yaml
 ```
+[![asciicast](https://asciinema.org/a/1269473.svg)](https://asciinema.org/a/1269473)
 3. **JSON Formatter**
 ```bash
-uv run gendiff --format json path/to/file1_tree.json path/to/file2_tree.json
-uv run gendiff --format json path/to/file1_tree.yaml path/to/file2_tree.yaml
+uv run gendiff --format json file1_tree.json file2_tree.json
+uv run gendiff --format json file1_tree.yaml file2_tree.yaml
 ```
+[![asciicast](https://asciinema.org/a/1269477.svg)](https://asciinema.org/a/1269477)[![asciicast](https://asciinema.org/a/1269478.svg)](https://asciinema.org/a/1269478)
