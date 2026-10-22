@@ -38,7 +38,11 @@ make package-install
 uv run gendiff file1.json file2.json
 uv run gendiff file1.yaml file2.yaml
 ```
-[![asciicast](https://asciinema.org/a/1269465.svg)](https://asciinema.org/a/1269465)[![asciicast](https://asciinema.org/a/1269467.svg)](https://asciinema.org/a/1269467)
+
+[![asciicast](https://asciinema.org/a/1269465.svg)](https://asciinema.org/a/1269465)
+
+[![asciicast](https://asciinema.org/a/1269467.svg)](https://asciinema.org/a/1269467)
+
 2. **Plain Formatter**
 ```bash
 uv run gendiff --format plain file1.json file2.json
@@ -52,6 +56,7 @@ uv run gendiff --format json file1.yaml file2.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269469.svg)](https://asciinema.org/a/1269469)
+
 [![asciicast](https://asciinema.org/a/1269470.svg)](https://asciinema.org/a/1269470)
 
 ### 5. Comparison of nested files
@@ -62,6 +67,7 @@ uv run gendiff file1_tree.yaml file2_tree.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269471.svg)](https://asciinema.org/a/1269471)
+
 [![asciicast](https://asciinema.org/a/1269472.svg)](https://asciinema.org/a/1269472)
 
 2. **Plain Formatter**
@@ -79,4 +85,5 @@ uv run gendiff --format json file1_tree.yaml file2_tree.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269477.svg)](https://asciinema.org/a/1269477)
+
 [![asciicast](https://asciinema.org/a/1269478.svg)](https://asciinema.org/a/1269478)
