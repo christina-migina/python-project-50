@@ -39,7 +39,7 @@ uv run gendiff file1.json file2.json
 uv run gendiff file1.yaml file2.yaml
 ```
 
-<a href="https://asciinema.org/a/1269465" target="_blank"><img src="https://asciinema.org/a/1269465.svg" /></a>
+[![asciicast](https://asciinema.org/a/1269465.svg)](https://asciinema.org/a/1269465)
 
 [![asciicast](https://asciinema.org/a/1269467.svg)](https://asciinema.org/a/1269467)
 
@@ -49,6 +49,7 @@ uv run gendiff --format plain file1.json file2.json
 uv run gendiff --format plain file1.yaml file2.yaml
 ```
 [![asciicast](https://asciinema.org/a/1269468.svg)](https://asciinema.org/a/1269468)
+
 3. **JSON Formatter**
 ```bash
 uv run gendiff --format json file1.json file2.json
