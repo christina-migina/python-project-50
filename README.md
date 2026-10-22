@@ -38,10 +38,30 @@ make package-install
 uv run gendiff path/to/file1.json path/to/file2.json
 uv run gendiff path/to/file1.yaml path/to/file2.yaml
 ```
+2. **Plain Formatter**
+```bash
+uv run gendiff --format plain path/to/file1.json path/to/file2.json
+uv run gendiff --format plain path/to/file1.yaml path/to/file2.yaml
+```
+3. **JSON Formatter**
+```bash
+uv run gendiff --format json path/to/file1.json path/to/file2.json
+uv run gendiff --format json path/to/file1.yaml path/to/file2.yaml
+```
 
 ### 5. Comparison of nested files
 1. **Stylish Formatter (Default)**
 ```bash
 uv run gendiff path/to/file1_tree.json path/to/file2_tree.json
 uv run gendiff path/to/file1_tree.yaml path/to/file2_tree.yaml
+```
+2. **Plain Formatter**
+```bash
+uv run gendiff --format plain path/to/file1_tree.json path/to/file2_tree.json
+uv run gendiff --format plain path/to/file1_tree.yaml path/to/file2_tree.yaml
+```
+3. **JSON Formatter**
+```bash
+uv run gendiff --format json path/to/file1_tree.json path/to/file2_tree.json
+uv run gendiff --format json path/to/file1_tree.yaml path/to/file2_tree.yaml
 ```
