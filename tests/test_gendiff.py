@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from gendiff.generate_diff import generate_diff
+from gendiff.core.generate_diff import generate_diff
 
 TEST_DATA_DIR = Path(__file__).parent / "test_data"
 
