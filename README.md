@@ -35,8 +35,8 @@ make package-install
 ### 4. Comparison of plain files
 1. **Stylish Formatter (Default)**
 ```bash
-uv run gendiff file1.json file2.json
-uv run gendiff file1.yaml file2.yaml
+uv run gendiff tests/test_data/file1.json tests/test_data/file2.json
+uv run gendiff tests/test_data/file1.yaml tests/test_data/file2.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269465.svg)](https://asciinema.org/a/1269465)
@@ -45,15 +45,15 @@ uv run gendiff file1.yaml file2.yaml
 
 2. **Plain Formatter**
 ```bash
-uv run gendiff --format plain file1.json file2.json
-uv run gendiff --format plain file1.yaml file2.yaml
+uv run gendiff --format plain tests/test_data/file1.json tests/test_data/file2.json
+uv run gendiff --format plain tests/test_data/file1.yaml tests/test_data/file2.yaml
 ```
 [![asciicast](https://asciinema.org/a/1269468.svg)](https://asciinema.org/a/1269468)
 
 3. **JSON Formatter**
 ```bash
-uv run gendiff --format json file1.json file2.json
-uv run gendiff --format json file1.yaml file2.yaml
+uv run gendiff --format json tests/test_data/file1.json tests/test_data/file2.json
+uv run gendiff --format json tests/test_data/file1.yaml tests/test_data/file2.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269469.svg)](https://asciinema.org/a/1269469)
@@ -63,8 +63,8 @@ uv run gendiff --format json file1.yaml file2.yaml
 ### 5. Comparison of nested files
 1. **Stylish Formatter (Default)**
 ```bash
-uv run gendiff file1_tree.json file2_tree.json
-uv run gendiff file1_tree.yaml file2_tree.yaml
+uv run gendiff tests/test_data/file1_tree.json tests/test_data/file2_tree.json
+uv run gendiff tests/test_data/file1_tree.yaml tests/test_data/file2_tree.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269471.svg)](https://asciinema.org/a/1269471)
@@ -73,16 +73,16 @@ uv run gendiff file1_tree.yaml file2_tree.yaml
 
 2. **Plain Formatter**
 ```bash
-uv run gendiff --format plain file1_tree.json file2_tree.json
-uv run gendiff --format plain file1_tree.yaml file2_tree.yaml
+uv run gendiff --format plain tests/test_data/file1_tree.json tests/test_data/file2_tree.json
+uv run gendiff --format plain tests/test_data/file1_tree.yaml tests/test_data/file2_tree.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269473.svg)](https://asciinema.org/a/1269473)
 
 3. **JSON Formatter**
 ```bash
-uv run gendiff --format json file1_tree.json file2_tree.json
-uv run gendiff --format json file1_tree.yaml file2_tree.yaml
+uv run gendiff --format json tests/test_data/file1_tree.json tests/test_data/file2_tree.json
+uv run gendiff --format json tests/test_data/file1_tree.yaml tests/test_data/file2_tree.yaml
 ```
 
 [![asciicast](https://asciinema.org/a/1269477.svg)](https://asciinema.org/a/1269477)
